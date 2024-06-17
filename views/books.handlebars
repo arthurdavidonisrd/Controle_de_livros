@@ -1,0 +1,26 @@
+<style>
+    h1{
+        text-align: center;
+    }
+    div{
+        text-align: center;
+    }
+    hr{
+        width: 30%;
+    }
+   
+</style>
+
+<h1>Livros disponiveis</h1>
+
+<div class="books-container">
+    {{#each books}}
+        <div>
+            <p>Nome do livro: {{this.title}}-</p>
+            <a href="/books/{{this.id}}">Ver livro</a>
+        </div>
+        <hr>
+    {{/each}}
+</div>
+
+<a href="/">voltar</a>

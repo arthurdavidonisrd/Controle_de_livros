@@ -1,0 +1,39 @@
+<style>
+    h1{
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-control{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin: 8px;
+    }
+</style>
+
+<h1>Cadastre seu livro</h1>
+
+<form action="/books/insertbooks" method="post">
+
+    <div class="form-control">
+        <label for="">Nome do livro</label>
+        <input type="text" name="title" id="">
+    </div>
+
+     <div class="form-control">
+        <label for="">Quantas paginas o livro tem?</label>
+        <input type="text" name="pageqty" id="">
+    </div>
+
+    <input type="submit" value="cadastrar livro">
+</form>
+
+
+
